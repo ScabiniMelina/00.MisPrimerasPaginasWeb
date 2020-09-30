@@ -1,0 +1,50 @@
+@font-face{
+    src: url(../fuentes/Montserrat-Regular.ttf
+      );
+      font-family:"montserrat-regular";
+  }
+  @font-face{
+      src: url(../fuentes/Montserrat-ExtraBold.ttf);
+      font-family: "montserrat-extrabold"
+  }
+  @font-face{
+      src: url(../fuentes/OpenSans-Light.ttf);
+      font-family: "opensans"
+  }
+body{
+
+    background: #008B8B;
+    
+}
+caption{
+    font-family: montserrat-regular;
+    font-size: 40px;
+    font-weight: 500;
+    
+    padding: 20PX;
+}
+table{
+   
+width: 80%;
+min-width: 600px;
+  
+   margin-bottom: 30px;
+   aling-items:center;
+   border-collapse: collapse;/*sacar alk separacion que tienen las tablas*/
+    background:white;
+}
+thead{
+    
+    color:white;
+    background:rgba(0, 0, 0, 0.767);
+}
+td{
+    font-family: opensans;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+   
+}
+.centrado{
+    display: flex;
+justify-content: center;}

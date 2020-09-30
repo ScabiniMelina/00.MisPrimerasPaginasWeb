@@ -1,0 +1,22 @@
+@font-face{
+    src: url(../../principal/Montserrat-Light.ttf);
+    font-family: montserrat;
+}
+@font-face{
+    src:url(../../principal/Oswald[wght].ttf);
+    font-family:oswald;
+}
+
+.banner{
+    display: flex;
+  
+   
+    height: 100vh;
+    background: #aa4b41;
+    color: #2d3033;
+    font-family: oswald;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+    
+}

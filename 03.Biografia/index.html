@@ -1,0 +1,27 @@
+﻿<!-- 1.html
+     2.lenguaje
+    3.head
+4 .meta que permita las ñ
+5.meta que regule el tamaño de la pantalla (NAME , CONTENT)
+6.Title -->
+
+
+
+<html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0">
+        <title>Pagina con frames</title>
+        <frameset rows="150px,*" border=0>
+                <frame src="menu/menu.html" name="menu" scrolling="no"></frame>
+                <frameset cols="60px,*" border=0>
+                        <frame src="baner.html" name="baner" scrolling="no" NORESIZE></frame>
+                        <frame src="principal/principal.html" name="principal" scrolling="yes" NORESIZE></frame>
+                </frameset>
+        </frameset>
+        <noframes>
+                <h1>Frames no disponibles</h1>
+        </noframes>
+</head>
+</html>

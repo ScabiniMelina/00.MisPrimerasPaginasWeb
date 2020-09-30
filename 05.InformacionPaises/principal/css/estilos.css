@@ -1,0 +1,118 @@
+@font-face {
+    src: url(../Montserrat-Light.ttf);
+    font-family: montserrat;
+}
+
+@font-face {
+    src: url(../Oswald[wght].ttf);
+    font-family: oswald;
+}
+
+body {
+    background: #335252;
+}
+
+h1 {
+    padding-top: 10vh;
+    text-align: center;
+    text-shadow: 1px 1px #021C1E;
+    font-family: oswald;
+    color: white;
+    font-size: 30px;
+}
+
+.texto {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.466);
+    z-index: 50;
+}
+
+p {
+    padding: 6px;
+    font-family: montserrat;
+    padding-left: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    font-size: 29px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #021C1E;
+}
+
+
+@media screen and (min-width:750px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider-contenedor {
+    z-index: 500;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.slider-contenedor .img {
+    display: none;
+    z-index: 20;
+}
+
+.slider-contenedor .slider-elemento {
+    display: block;
+}
+
+/* .slider-shadow {
+	width: 100%;
+	height: 15px;
+	position: relative;
+} */
+
+.slider-shadow:after,
+.slider-shadow:before {
+    content: '';
+    position: absolute;
+    background: #171c24;
+    height: 100%;
+    width: 50%;
+    left: 10px;
+    top: -20px;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    -webkit-box-shadow: 0 0 15px 8px #171c24;
+    box-shadow: 0 0 15px 8px #171c24;
+}
+
+.slider-shadow:before {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.slider-contenedor img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}

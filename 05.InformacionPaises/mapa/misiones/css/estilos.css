@@ -1,0 +1,176 @@
+@font-face {
+  src: url(../../../principal/Montserrat-Light.ttf);
+  font-family: montserrat;
+}
+
+@font-face {
+  src: url(../../../principal/Oswald[wght].ttf);
+  font-family: oswald;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2d3033;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+h2,
+h1 {
+  text-align: center;
+  font-family: montserrat;
+  color: #021C1E;
+  font-size: 30px;
+
+}
+
+h1 {
+  color: white;
+
+  font-size: 40px;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fbfbfb;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  /* border-radius:20px; */
+  justify-content: center;
+
+  font-family: montserrat;
+  margin-bottom: 50px;
+
+}
+
+.info::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  top: -100%;
+  left: 0px;
+  background: #aa4b41;
+  transition: all .3s;
+
+
+}
+
+.info:hover:before {
+  top: 0px;
+}
+
+
+img,
+video {
+  object-fit: cover;
+  height: 200px;
+
+  width: 100%;
+  transition: transform 4s;
+}
+
+
+p {
+  margin: 2px;
+}
+
+.caja {
+  overflow: hidden;
+  display: block;
+  height: 200px;
+  width: 49%;
+  margin: 1px;
+
+
+
+
+
+}
+
+img:hover {
+  transform: scale(1.2);
+
+}
+
+.galeria {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+button {
+  align-content: center;
+  margin-bottom: 50px;
+  padding: 12px;
+  text-align: center;
+  background: #8f2b20;
+  border: 0px;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.959);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.123);
+}
+
+button:hover {
+  background: #811c11;
+}
+
+button:active {
+  background: #752118;
+}
+
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: montserrat
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+.inicio {
+  z-index: 20;
+  position: fixed;
+  background: #aa4b41;
+  width: 10%;
+  padding: 10px 5px;
+  text-align: center;
+  right: 0px;
+}
+
+.inicio:hover {
+  background: #9c372c;
+}
+
+li {
+  list-style: none;
+
+}

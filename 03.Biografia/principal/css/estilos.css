@@ -1,0 +1,51 @@
+@font-face{
+    src: url(../Montserrat-Light.ttf);
+    font-family: montserrat;
+}
+@font-face{
+    src:url(../Oswald[wght].ttf);
+    font-family:oswald;
+}
+
+body{
+    background: #66A5AD;
+    background-image: url(../img/2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position:relative;
+}
+
+.oscuro{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.466);
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    padding-top: 10vh;
+    text-align: center;
+    text-shadow:1px 1px #021C1E;
+    font-family: oswald;
+    color:white;
+    font-size: 60px;
+}
+
+p {
+    padding: 6px;
+    font-family: montserrat;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    font-size: 29px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #021C1E;
+}
+
+@media screen  and  (min-width:750px){
+    h1{font-size:120px;}
+    p{font-size:38px;
+    }
+}

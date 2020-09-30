@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background: gray;
+
+}
+img{
+    width: auto;
+    height:auto;
+    object-fit: cover;
+}

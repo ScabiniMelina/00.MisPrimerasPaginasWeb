@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+    <script>
+        function inicio() {
+            var usuario = form.usuario.value
+            var contraseña = form.contraseña.value
+            if (usuario == "fedego" && contraseña == "fedego") {
+
+                return true;
+            } else {
+                alert("Usuario o contraseña inválida");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body class="formulario">
+    <form name="form" action="valido.html" metod="post" onsubmit=" return inicio()">
+        <h2>INICIAR SESION</h2>
+        <p>Usuario:</p>
+        <input type="text" name="usuario" placeholder="Usuario"></input>
+        <p>Contraseña:</p>
+        <input type="text" name="contraseña" placeholder="Contraseña"></input>
+        <p></p>
+        <button type="submit" class="iniciar_sesion" onclick=" return inicio()">Enviar</button>
+    </form>
+</body>
+
+</html>

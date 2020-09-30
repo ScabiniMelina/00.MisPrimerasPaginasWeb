@@ -1,0 +1,53 @@
+<html>
+	<head>
+     	<script>
+     		function ingresePrecio(){
+     			var nafta=100;
+     			var precio=formP.precio.value;
+     			var litros=precio/nafta;
+     			formP.nafta.value=litros
+
+
+
+     		}
+     		function ingreseNafta(){
+     			var nafta=100;
+     			
+     			var litros=formN.nafta1.value;
+     			
+     			var precio=nafta*litros;
+     			formN.precio1.value=precio;
+
+
+     		}
+		</script>
+	</head>
+
+
+	<body>
+		<form name="formP">
+		<p>Precio:</p>
+		<input type="text" name="precio">
+		<p>Litros de nafta:</p>
+		<input type="text" name="nafta">
+		<button type="button" onclick="ingresePrecio()">Enviar</button>
+		</form>
+		<form name="formN">
+		<p>Precio:</p>
+		<input type="text" name="precio1">
+		<p>Litros de nafta:</p>
+		<input type="text" name="nafta1">
+		<button type="button" onclick="ingreseNafta()">Enviar</button>
+		</form>
+
+	</body>
+	<style type="text/css">
+		form{
+			width:100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: blue;
+		}
+	</style>
+<html>

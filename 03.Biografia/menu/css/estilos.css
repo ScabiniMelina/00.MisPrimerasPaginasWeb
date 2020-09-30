@@ -1,0 +1,74 @@
+
+@font-face{
+  src: url(../../Montserrat-Light.ttf);
+  font-family: montserrat;
+}
+@font-face{
+  src:url(../../Oswald[wght].ttf);
+  font-family:oswald;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.menu {
+
+  background: #008B8B;
+}
+
+li {
+
+  color: white;
+  list-style: none;
+  text-align: center;
+  padding: 40px 0px;
+
+}
+
+.a {
+  border-left: 1px solid rgba(1, 98, 98, 0.431);
+}
+
+li:hover {
+  background: rgb(1, 98, 98);
+}
+
+a {
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+}
+
+[class*=icon] {
+
+  display: block;
+  padding: 2px 8px;
+}
+
+.titulo {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+
+  a {
+
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+  }
+
+
+}
